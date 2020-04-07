@@ -8,7 +8,7 @@
     min-height: 22px;
     margin-top: 6px !important;
     margin-bottom: 6px !important;
-    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .icheck-inline {
@@ -16,12 +16,12 @@
 }
 
     .icheck-inline + .icheck-inline {
-        margin-left: .75rem;
+        margin-right: .75rem;
         margin-top: 6px;
     }
 
 [class*="icheck-"] > label {
-    padding-left: 29px !important;
+    padding-right: 29px !important;
     min-height: 22px;
     line-height: 22px;
     display: inline-block;
@@ -51,7 +51,7 @@
         height: 22px;
         border: 1px solid #D3CFC8;
         border-radius: 0px;
-        margin-left: -29px;
+        margin-right: -29px;
     }
 
     [class*="icheck-"] > input:first-child:checked + label::after,
@@ -60,14 +60,14 @@
         display: inline-block;
         position: absolute;
         top: 0;
-        left: 0;
+        right: 0;
         width: 7px;
         height: 10px;
         border: solid 2px #fff;
         border-left: none;
         border-top: none;
-        transform: translate(7.75px, 4.5px) rotate(45deg);
-        -ms-transform: translate(7.75px, 4.5px) rotate(45deg);
+        transform: translate(-7.75px, 4.5px) rotate(45deg);
+        -ms-transform: translate(-7.75px, 4.5px) rotate(45deg);
     }
 
 [class*="icheck-"] > input[type="radio"]:first-child + label::before,
@@ -321,7 +321,7 @@
 .icheck-clouds > input:first-child:checked + label::after,
 .icheck-clouds > input:first-child:checked + input[type="hidden"] + label::after {
     border-bottom-color: #95a5a6;
-    border-right-color: #95a5a6;
+    border-left-color: #95a5a6;
 }
 
 .icheck-concrete > input:first-child:not(:checked):not(:disabled):hover + label::before,
